@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Free Learning Resources | EduForAll</title>
   <link rel="stylesheet" href="css/style.css">
+
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -21,8 +22,22 @@
       animation: slideDown 1s ease;
     }
 
-    h1 {
-      margin-bottom: 0;
+    nav {
+      background-color: #004d99;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .resource-container {
@@ -30,6 +45,8 @@
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
       padding: 30px;
+      max-width: 1200px;
+      margin: auto;
     }
 
     .resource {
@@ -92,35 +109,49 @@
     <p>Learn anytime, anywhere — for free!</p>
   </header>
 
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="contribution.html">Contributions</a> |
+    <a href="resources.html">Resources</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
+
   <section class="resource-container">
     <div class="resource">
       <img src="images/khan.png" alt="Khan Academy">
-      <h3><a href="https://www.khanacademy.org/">Khan Academy</a></h3>
+      <h3><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a></h3>
       <p>World-class education for free. Courses from math to arts.</p>
     </div>
 
     <div class="resource">
       <img src="images/nptel.png" alt="NPTEL">
-      <h3><a href="https://nptel.ac.in/">NPTEL Courses</a></h3>
+      <h3><a href="https://nptel.ac.in/" target="_blank">NPTEL Courses</a></h3>
       <p>Quality lectures from India’s top IIT professors.</p>
     </div>
 
     <div class="resource">
       <img src="images/coursera.png" alt="Coursera">
-      <h3><a href="https://www.coursera.org/">Coursera (Free)</a></h3>
+      <h3><a href="https://www.coursera.org/" target="_blank">Coursera (Free)</a></h3>
       <p>Enroll in university-level courses and earn certifications.</p>
     </div>
 
     <div class="resource">
       <img src="images/ndl.png" alt="National Digital Library">
-      <h3><a href="https://ndl.iitkgp.ac.in/">National Digital Library</a></h3>
+      <h3><a href="https://ndl.iitkgp.ac.in/" target="_blank">National Digital Library</a></h3>
       <p>Access millions of books and papers for academic needs.</p>
     </div>
 
     <div class="resource">
       <img src="images/swayam.png" alt="Swayam MOOC">
-      <h3><a href="https://swayam.gov.in/">Swayam MOOC</a></h3>
+      <h3><a href="https://swayam.gov.in/" target="_blank">Swayam MOOC</a></h3>
       <p>Free courses from school to post-graduate level.</p>
+    </div>
+
+    <div class="resource">
+      <img src="images/udemy.png" alt="Udemy Free Courses">
+      <h3><a href="https://www.udemy.com/courses/free/" target="_blank">Udemy Free Courses</a></h3>
+      <p>Skill-based learning in tech, business, arts and more.</p>
     </div>
   </section>
 

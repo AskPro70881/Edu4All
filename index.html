@@ -1,31 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EduForAll - Home</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>EduForAll | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f9ff;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #0059b3, #66ccff);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      animation: slideFadeDown 1s ease;
+    }
+
+    nav {
+      background-color: #e6f2ff;
+      padding: 12px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #003366;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #007acc;
+      text-decoration: underline;
+    }
+
+    main.content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    .hero-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #004080;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      padding: 0 10px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideFadeDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
 
-  <header class="hero">
-    <h1>EduForAll</h1>
-    <p>Empowering through Quality Education - SDG 4</p>
+  <header>
+    <h1>Welcome to EduForAll</h1>
+    <p>Empowering learners through technology-driven education</p>
   </header>
 
-  <main>
-    <section class="section">
-      <img src="images/education_banner.jpg" alt="Illustration promoting quality education" class="hero-img animate" />
-      <p>
-        Welcome to EduForAll, your gateway to supporting and promoting Sustainable Development Goal 4 — Quality Education for all.
-      </p>
-    </section>
-  </main>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="contribution.html">Contributions</a> |
+    <a href="resources.html">Resources</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  <footer>
-    © 2025 EduForAll Project
-  </footer>
+  <main class="content">
+    <img src="images/education_banner.png" alt="Illustration promoting quality education" class="hero-img">
+
+    <h2>About EduForAll</h2>
+    <p>We are committed to advancing SDG 4: Quality Education by leveraging AI and digital platforms.</p>
+  </main>
 
 </body>
 </html>

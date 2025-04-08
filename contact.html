@@ -1,7 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | EduForAll</title>
+  <link rel="stylesheet" href="css/style.css">
 
-    <html><head><title>Contact</title><link rel="stylesheet" href="style.css"></head><body>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f8ff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #004d99, #66ccff);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: slideDown 1s ease;
+    }
+
+    nav {
+      background: #e6f2ff;
+      padding: 10px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #004d99;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h2 {
+      text-align: center;
+      color: #004d99;
+    }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    form textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    form button {
+      display: block;
+      background: #004d99;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      margin-top: 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #007acc;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
     <h1>Contact Us</h1>
-    <p>Have suggestions? Reach out at <a href="mailto:team@eduforall.org">team@eduforall.org</a></p>
-    <a href="index.html">Back to Home</a>
-    </body></html>
-    
+    <p>We’d love to hear from you!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="contribution.html">Contributions</a> |
+    <a href="resources.html">Resources</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Get in Touch</h2>
+    <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+</body>
+</html>

@@ -2,32 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About SDG 4</title>
-  <link rel="stylesheet" href="style.css">
+  <title>About | EduForAll</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f9ff;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #004d99, #66ccff);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeSlideDown 1s ease;
+    }
+
+    nav {
+      background-color: #e6f2ff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #004d99;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main.content {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    main p, main strong {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .hero-img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 30px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeSlideDown {
+      from { opacity: 0; transform: translateY(-100px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-
-  <header class="hero">
-    <h1 class="animate">About SDG 4</h1>
+  <header>
+    <h1>About Us</h1>
+    <p>Learn more about our mission and the team behind EduForAll</p>
   </header>
 
-  <main class="section animate">
-    <p>
-      <strong>SDG 4</strong> ensures inclusive and equitable quality education and promotes lifelong learning opportunities for all.
-    </p>
-    <p>
-      <strong>Key Targets:</strong> Provide free quality education, improve access to technical training, and eliminate gender disparities.
-    </p>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="contribution.html">Contributions</a> |
+    <a href="resources.html">Resources</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
 
+  <main class="content">
+    <p>EduForAll is a project initiated by passionate learners to promote inclusive education.</p>
+    <p><strong>Key Targets:</strong> Provide free quality education, improve access to technical training, and eliminate gender disparities.</p>
+    
     <img src="images/sdg4.png" alt="SDG 4 Banner" class="hero-img">
-
-    <br><br>
-    <a href="index.html" class="btn">← Back to Home</a>
   </main>
-
-  <footer>
-    &copy; 2025 SDG 4 Initiative | Education for All
-  </footer>
-
 </body>
 </html>
+
